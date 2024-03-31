@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DESIGN</title>
+    <!-- Font awosome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- css file  -->
+    <link rel="stylesheet" href="header.css">
+
+    <!-- bootstrap file  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">PortFolio</h1>
+
+        <nav class="navbar-all">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#footer">LINKS</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
+        </div>
+
+    </header>
+
+    <!-- HOME SECTION -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h4>Hello! I am</h4>
+            <h3>Vishaka Malik</h3>
+            <h4>Developer, Problem Solver</h4>
+            <p>I combine my creativity in web design with a problem-solving approach. This enables me to tackle coding challenges efficiently and deliver optimal functionality.</p>
+            <a href="#menu" class="btn-content">Download CV</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about">
+        <h1 class="heading"> <span>about</span> Me </h1>
+        <div class="row">
+            <div class="image">
+                <img src="https://img.freepik.com/free-photo/html-system-website-concept_23-2150376770.jpg">
+            </div>
+
+            <div class="about-content">
+                <h3>Why would you choose Me?</h3>
+                <p>Hello! I'm <b>Vishaka Malik</b>, a passionate and creative individual with a strong interest in web development and problem-solving. I enjoy crafting user-friendly websites using HTML, CSS, and JavaScript frameworks like Bootstrap.  I'm also proficient in Python, with a solid understanding of data structures. Additionally, I possess a strong foundation in Data Structures and Algorithms, allowing me to approach coding challenges efficiently.
+                <p>Beyond technical skills, I value clear and concise communication, honed through experience in team projects and presentations. My knowledge of C++ allows me to work comfortably with object-oriented programming concepts.</p>
+                <p>Feel free to explore my portfolio to learn more about my projects and how I can contribute to your needs.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MENU SECTION -->
+ 
+
+    <section class="menu" id="skills">
+        <h1 class="heading"> My <span>Skills</span></h1>
+        <div class="box-container">
+            <div class="box" id="item1">
+                <img src="https://media.istockphoto.com/id/1371339413/photo/co-working-team-meeting-concept-businessman-using-smart-phone-and-digital-tablet-and-laptop.webp?b=1&s=170667a&w=0&k=20&c=GnW36mPEYr3TRpPZNLtT75u8v2HOczvRxGckWUN3hVg=">
+                <h3>Web Design</h3>
+                <button class="btn-menu">View</button> 
+            </div>
+
+            <div class="box" id="item2">
+                <img src="https://www.finoit.com/wp-content/uploads/2023/08/where-to-find-great-python-developers.jpg">
+                <h3>Python</h3>
+                <button class="btn-menu">View</button> 
+            </div>
+
+            <div class="box" id="item3">
+                <img src="https://media.graphassets.com/resize=width:5516,height:3677/WwEKMNF3RzyR86qffLrl">
+                <h3>DSA</h3>
+                <button class="btn-menu">View</button> 
+            </div>
+
+            <div class="box" id="item4">
+                <img src="https://www.tutorialspoint.com/cplusplus/images/cpp-mini-logo.jpg">
+                <h3>C++</h3>
+                <button class="btn-menu">View</button> 
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!----------CONTACT---------->
+
+<section class="contact" id="contact">
+    <h1 class="heading"><span>contact</span> Me</h1>
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28051.57093561642!2d77.2376413569568!3d28.496215197923835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1ba80e65535%3A0x4047e569b0abb1c8!2sDevli%2C%20Sangam%20Vihar%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1689267036991!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form action="">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span><i class="fa-solid fa-user"></i></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <input type="number" placeholder="number">
+            </div>
+            <input type="submit" value="Contact Now" class="btn-content" onclick="openPopup()">
+            <div class="pop-up" id="popup">
+                <img src="https://images.pond5.com/check-mark-symbol-symbolizing-right-footage-158693661_iconl.jpeg">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted. We contact you as soon as possible by today.</p>
+                <button type="button" class="pop-up-btn" onclick="closePopup()">OK</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+    <!-- -----------FOOTER SECTION------------- -->
+
+    <section class="footer" id="footer">
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <div class="credit">created by <span>Vishaka Malik</span> | all rights reserved.</div>
+    </section>
+
+
+
+    <!-- js file -->
+    <script src="header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    
+    <!-- popup js file -->
+    <script src="popup.js"></script>
+</body>
+</html>

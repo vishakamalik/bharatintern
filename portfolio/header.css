@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color: #d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border: 0.2rem solid rgba(225,225,225,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* transition: .2s linear; */
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+
+
+section{
+    padding: 2rem 7%;
+    background: var(--bg);
+}
+
+.heading{
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.heading span{
+    color: var(--main-color);
+}
+
+.btn-content{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    color: white;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn-content:hover{
+    color: white;
+    text-decoration: none;
+    border: 0.1rem solid #d3ad7f;
+    background: none;
+    transition: all ease .4s;
+}
+
+.btn-menu{
+    margin-top: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    color: white;
+    background: var(--main-color);
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+.btn-menu:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo{
+    padding: 1.5rem;
+    height: 6rem;
+    color: #ccc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header .navbar-all a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+}
+
+.header .navbar-all a:hover{
+    color: var(--main-color);
+    border-bottom: 0.2rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .icons i{
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons i:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("https://t3.ftcdn.net/jpg/01/83/50/32/360_F_183503230_heDoLySnwt4W968RVTJOf7LFHbkZdCHA.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .home-content{
+    max-width: 60rem;
+}
+
+.home .home-content h4{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.home .home-content h3{
+    font-size: 4.4rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.home .home-content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #eee;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+
+    /*---------- ABOUT PAGE ----------- */
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 30rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .about-content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .about-content h3{
+    font-size: 3rem;
+    color: white;
+}
+
+.about .row .about-content p{
+    font-size: 1.3rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.about .row .about-content p span{
+    font-size: 2.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--main-color);
+}
+
+    /*---------- MENU PAGE ----------- */
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.menu .box-container .box img{
+    height: 15rem;
+}
+
+.menu .box-container .box h3{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: white;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.menu .box-container .box:hover{
+    background: rgba(235, 232, 232, 0.966);
+}
+
+.menu .box-container .box:hover >*{
+    color: var(--black);
+}
+
+
+/* ------------CONTACT PAGE-------------- */
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: var(--border);
+}
+
+.contact .row form .inputBox span{
+    color: white;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: white;
+    text-transform: none;
+    background: none;
+}
+
+.pop-up{
+    width: 40rem;
+    height: 25rem;
+    background: var(--black);
+    border-radius: 2rem;
+    position: absolute;
+    /* top: 310rem; */
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.open-pop-up{
+    visibility: visible;
+    top: 210rem;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+
+.pop-up img{
+    width: 7rem;
+    height: 7rem;
+    margin-top: -5rem;
+    border-radius: 50%;
+}
+
+.pop-up h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 2rem 0 2rem;
+}
+
+.pop-up p{
+    font-size: 1.3rem;
+}
+
+.pop-up-btn{
+    width: 100%;
+    margin: 2rem 0 2rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    color: white;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.pop-up-btn:hover{
+    color: white;
+    text-decoration: none;
+    border: 0.1rem solid #d3ad7f;
+    background: none;
+    transition: all ease .4s;
+}
+
+
+/* -----------FOOTER SECTION------------- */
+
+.footer{
+    text-align: center;
+}
+
+.footer .social-icons i{
+    
+    font-size: 2rem;
+    color: whitesmoke;
+    padding: 1rem;
+    margin: 0 0.5rem 0 0.5rem;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+
+}
+
+.footer .social-icons i:hover{
+    border: none;
+    background:var(--main-color);
+    color: black;
+    transition: all ease .4s;
+
+}
+
+.footer .credit {
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 2rem ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1.5rem;
+    background: rgba(165, 42, 42, 0.082);
+
+}
+
+.footer .credit span{
+    color: var(--main-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 900px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 768px){
+ 
+#menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar-all{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: var(--black);
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar-all.active{
+        right: 0; 
+    }
+
+    .header .navbar-all a{
+        color: white;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .home{
+        background-position: left;  
+        justify-content: center;
+    }
+
+    .home .home-content h3{
+        font-size: 4.4rem;
+    }
+
+    .home .home-content p{
+        font-size: 2rem;
+    }
+
+    .about .row .about-content p{
+        font-size: 1.9rem;
+    }
+
+    .footer .credit{
+        font-size: 2rem;
+    }
+
+
+}
+
+@media(max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+}
